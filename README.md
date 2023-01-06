@@ -94,11 +94,12 @@ import { vTinykeys } from 'vue-tinykeys'
 import { ref } from 'vue'
 
 const count = ref(0)
+const key = 'shift+a'
 const inc = () => count.value++
 </script>
 
 <template>
-  <div v-tinykeys:[`shift+a`]="inc" tabindex="-1" style="border: 2px solid #9e768f;">
+  <div v-tinykeys:[key]="inc" tabindex="-1" style="border: 2px solid #9e768f;">
     <p>The count is {{ count }}. Click inside this area to enable the hotkey.</p>
   </div>
 </template>
