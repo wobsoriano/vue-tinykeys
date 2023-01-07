@@ -1,6 +1,6 @@
 # vue-tinykeys
 
-Vue composable and directive for keybindings.
+Vue composable and directive for keybindings. Made on top of [tinykeys](https://github.com/jamiebuilds/tinykeys).
 
 ## Install
 
@@ -39,7 +39,7 @@ import { ref } from 'vue'
 
 const count = ref(0)
 
-useTinykeys(['ctrl+shift+a+c', 'c', 'shift+c'], () => count.value++)
+useTinykeys(['$mod+Shift+c', 'c', 'Shift+c'], () => count.value++)
 </script>
 
 <template>
@@ -55,7 +55,7 @@ import { useTinykeys } from 'vue-tinykeys'
 import { ref } from 'vue'
 
 const count = ref(0)
-const getRef = useTinykeys('shift+a', () => count.value++)
+const getRef = useTinykeys('Shift+a', () => count.value++)
 </script>
 
 <template>
@@ -74,7 +74,7 @@ import { useTinykeys } from 'vue-tinykeys'
 import { ref } from 'vue'
 
 const count = ref(0)
-const getRef = useTinykeys('shift+a', () => count.value++)
+const getRef = useTinykeys('Shift+a', () => count.value++)
 </script>
 
 <template>
@@ -94,7 +94,7 @@ import { vTinykeys } from 'vue-tinykeys'
 import { ref } from 'vue'
 
 const count = ref(0)
-const key = 'shift+a'
+const key = 'Shift+a'
 const inc = () => count.value++
 </script>
 

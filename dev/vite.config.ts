@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      'use-tinykeys': path.relative(__dirname, '../src'),
+      'vue-tinykeys': path.relative(__dirname, '../src'),
     },
   },
 })

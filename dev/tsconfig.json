@@ -3,7 +3,7 @@
   "compilerOptions": {
     "types": ["vite/client"],
     "paths": {
-      "use-tinykeys": ["../src"]
+      "vue-tinykeys": ["../src"]
     }
   },
   "include": ["./**/*"]
