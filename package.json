@@ -12,7 +12,12 @@
     "url": "git+https://github.com/wobsoriano/vue-tinykeys.git"
   },
   "bugs": "https://github.com/wobsoriano/vue-tinykeys/issues",
-  "keywords": ["hotkey", "bindings", "keys", "shortcut"],
+  "keywords": [
+    "hotkey",
+    "bindings",
+    "keys",
+    "shortcut"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
@@ -42,6 +47,7 @@
     "dev:build": "vite build dev",
     "dev:preview": "vite preview dev",
     "lint": "eslint .",
+    "release": "bumpp && npm publish",
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {
@@ -51,6 +57,7 @@
     "@antfu/eslint-config": "^0.34.0",
     "@types/node": "^18.11.18",
     "@vitejs/plugin-vue": "^4.0.0",
+    "bumpp": "^8.2.1",
     "eslint": "^8.30.0",
     "typescript": "^4.9.4",
     "unbuild": "^1.0.2",
