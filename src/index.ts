@@ -1,5 +1,5 @@
 import type { ComponentPublicInstance, Directive, DirectiveBinding } from 'vue'
-import tinykeys, { type KeyBindingMap, type KeyBindingOptions } from 'tinykeys'
+import { type KeyBindingMap, type KeyBindingOptions, tinykeys } from 'tinykeys'
 import { getCurrentInstance, onMounted, onScopeDispose, ref } from 'vue'
 
 declare global {

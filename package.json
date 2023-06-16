@@ -21,6 +21,7 @@
   "sideEffects": false,
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs",
       "import": "./dist/index.mjs"
     }
@@ -54,7 +55,7 @@
     "vue": "^3.2.0"
   },
   "dependencies": {
-    "tinykeys": "^1.4.0"
+    "tinykeys": "^2.1.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.6",
