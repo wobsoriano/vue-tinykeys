@@ -1,7 +1,7 @@
 {
   "name": "vue-tinykeys",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "packageManager": "pnpm@8.2.0",
   "description": "Vue composable and directive for keybindings.",
   "author": "Robert Soriano <sorianorobertc@gmail.com>",
