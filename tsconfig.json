@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
     "target": "es2018",
+    "jsx": "preserve",
+    "lib": ["ESNext", "DOM"],
     "useDefineForClassFields": true,
     "module": "esnext",
-    "lib": ["ESNext", "DOM"],
     "moduleResolution": "node",
-    "esModuleInterop": true,
-    "jsx": "preserve",
-    "isolatedModules": true,
+    "resolveJsonModule": true,
     "strict": true,
     "strictNullChecks": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
     "noEmit": true,
-    "skipDefaultLibCheck": true
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
   }
 }
