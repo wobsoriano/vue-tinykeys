@@ -2,7 +2,7 @@
   "name": "vue-tinykeys",
   "type": "module",
   "version": "0.2.0",
-  "packageManager": "pnpm@8.2.0",
+  "packageManager": "pnpm@8.13.1",
   "description": "Vue composable and directive for keybindings.",
   "author": "Robert Soriano <sorianorobertc@gmail.com>",
   "license": "MIT",
@@ -21,21 +21,24 @@
   "sideEffects": false,
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "types": {
+        "import": "./dist/index.d.ts",
+        "require": "./dist/index.d.cts"
+      },
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     }
   },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "unpkg": "dist/index.global.js",
+  "jsdelivr": "dist/index.global.js",
   "types": "./dist/index.d.ts",
   "typesVersions": {
     "*": {
       "*": [
-        "*",
-        "dist/*",
-        "dist/*.d.ts",
-        "dist/*/index.d.ts"
+        "./dist/*",
+        "./*"
       ]
     }
   },
@@ -43,7 +46,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "unbuild",
+    "build": "tsup",
     "dev": "vite serve dev",
     "dev:build": "vite build dev",
     "dev:preview": "vite preview dev",
@@ -58,14 +61,14 @@
     "tinykeys": "^2.1.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.38.6",
-    "@types/node": "^18.16.7",
-    "@vitejs/plugin-vue": "^4.2.1",
-    "bumpp": "^9.1.0",
-    "eslint": "^8.40.0",
-    "typescript": "^5.0.4",
-    "unbuild": "^1.2.1",
-    "vite": "^4.3.5",
-    "vue": "^3.2.47"
+    "@antfu/eslint-config": "^2.6.1",
+    "@types/node": "^20.10.5",
+    "@vitejs/plugin-vue": "^4.6.0",
+    "bumpp": "^9.2.1",
+    "eslint": "^8.56.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10",
+    "vue": "^3.3.13"
   }
 }

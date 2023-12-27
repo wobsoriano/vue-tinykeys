@@ -4,7 +4,7 @@ import { ref } from 'vue'
 
 const count = ref(0)
 
-useTinykeys('$mod+Shift+c', () => count.value++)
+useTinykeys('$mod+Shift+X', () => count.value++)
 </script>
 
 <template>
