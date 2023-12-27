@@ -15,7 +15,7 @@ npm install vue-tinykeys
 The most basic usage is to assign a hotkey we want to listen to and a callback to get executed once the user hits that key:
 
 ```vue
-<script setup lang="ts">
+<script setup>
 import { useTinykeys } from 'vue-tinykeys'
 import { ref } from 'vue'
 
@@ -33,7 +33,7 @@ useTinykeys('w', () => count.value--)
 We can also use an array as first argument to listen to multiple keystrokes and/or hotkeys and trigger the same callback:
 
 ```vue
-<script setup lang="ts">
+<script setup>
 import { useTinykeys } from 'vue-tinykeys'
 import { ref } from 'vue'
 
@@ -50,7 +50,7 @@ useTinykeys(['$mod+Shift+c', 'c', 'Shift+c'], () => count.value++)
 By default, hotkeys are attached globally. We can scope hotkeys by attaching the returned function of `useTinykeys` to any component that takes a ref:
 
 ```vue
-<script setup lang="ts">
+<script setup>
 import { useTinykeys } from 'vue-tinykeys'
 import { ref } from 'vue'
 
@@ -69,7 +69,7 @@ const getRef = useTinykeys('Shift+a', () => count.value++)
 Tags like `<div>`, `<section>`, `<span>`, etc. cannot receive focus by default. To let them receive focus we have to use the `tabindex` attribute:
 
 ```vue
-<script setup lang="ts">
+<script setup>
 import { useTinykeys } from 'vue-tinykeys'
 import { ref } from 'vue'
 
@@ -89,7 +89,7 @@ const getRef = useTinykeys('Shift+a', () => count.value++)
 Basic:
 
 ```vue
-<script setup lang="ts">
+<script setup>
 import { vTinykeys } from 'vue-tinykeys'
 import { ref } from 'vue'
 
@@ -108,7 +108,7 @@ const inc = () => count.value++
 Multiple:
 
 ```vue
-<script setup lang="ts">
+<script setup>
 import { vTinykeys } from 'vue-tinykeys'
 import { ref } from 'vue'
 
